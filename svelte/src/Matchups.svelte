@@ -12,7 +12,7 @@
 
 <div>
     <span>Matchups for {$selectedCommanderStore}</span><br/>
-    {#each matchups.get($selectedCommanderStore) as matchup}
+    {#each matchups.get($selectedCommanderStore).toSorted((a,b) => a.opponent.localeCompare(b.opponent)) as matchup}
         <Matchup commander={$selectedCommanderStore} opponent={matchup.opponent} outcome={matchup.outcome}
                  strategy={matchup.strategy}/>
     {/each}
