@@ -16,7 +16,7 @@
 </style>
 <div>
     <div class="container">
-        <div class="item item-1">{commander} vs {opponent}</div>
+        <div class="item item-1"><h3>{commander} vs {opponent}</h3></div>
         <div class="item item-2">{outcome}</div>
         <div class="item item-3">{strategy}</div>
     </div>
